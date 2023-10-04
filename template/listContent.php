@@ -10,7 +10,7 @@
 <body>
 
 <?php
-    require_once 'config/connexion.php';
+    require_once dirname(__DIR__).'/config/connexion.php';
 
     $db = connect($config);
         if ($db == null) {

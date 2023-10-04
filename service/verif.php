@@ -64,7 +64,7 @@
         return true;
     }
 
-    function verif($pseudo, $email, $password, $passwordConf, $nom, $prenom, $shortDesc) {
+    function verifInsertUser($pseudo, $email, $password, $passwordConf, $nom, $prenom, $shortDesc) {
         if (!verifChaine($pseudo, 'pseudo')) {
             return false;
         }
@@ -86,5 +86,10 @@
         return true;
     }
 
-
+    function verifUserForConnexion($pseudo, $password) {
+        if (!verifChaine($pseudo, 'pseudo')) {
+            return false;
+        }
+        return true;
+    }
 ?>

@@ -22,9 +22,9 @@
         }        
     }
 
-    function selectByEmail($db, $email) {
-        $selectByEmail = $db->prepare("select email from utilisateur where email= :email");
-        $selectByEmail->bindValue('email', $email, PDO::PARAM_STR);
-        $selectByEmail->execute();
-        return $selectByEmail->fetch();
+    function selectUserByPseudo($db, $pseudo) {
+        $selectByPseudo = $db->prepare("select * from utilisateur where pseudo= :pseudo");
+        $selectByPseudo->bindValue('pseudo', $pseudo, PDO::PARAM_STR);
+        $selectByPseudo->execute();
+        return $selectByPseudo->fetch();
     }

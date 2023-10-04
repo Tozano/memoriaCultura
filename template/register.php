@@ -4,14 +4,13 @@
 <?php
     include('template/header.html');
 ?>
-    <title>Memoria Cultura - Accueil</title>
+    <title>Memoria Cultura - Connexion</title>
 </head>
 
 <body>
 
 <?php
-    require_once 'bd/config.php';
-    require_once 'bd/connexion.php';
+    require_once dirname(__DIR__).'/config/connexion.php';
 
     $db = connect($config);
         if ($db == null) {
@@ -33,10 +32,9 @@
                 array_push($_SESSION['tokens'], $tokenAssoss);
                 $tokens = $_SESSION['tokens'];
             }
-            print_r($tokenAssoss);
             echo '
             <div class="container mt-3">
-                <form action="web/newUserCheck.php" method="post">
+                <form action="web/userCheck.php" method="post">
                     <h1>Connectez-vous</h1>
                     <input type="hidden" name="token" value="'.$token.'">
                     <input type="hidden" name="sendDate" value="'.$nowDate.'">
