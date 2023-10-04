@@ -1,6 +1,6 @@
 <?php
 $config['serveur']='localhost';
-$config['login'] = 'kelian';
-$config['mdp'] ='F7AQAx)KuvT8WQjVw0';
+$config['login'] = 'login4426';
+$config['mdp'] ='gYlSjWLERaYsBrn';
 $config['bd'] = 'dbPhp';
 ?>
