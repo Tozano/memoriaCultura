@@ -10,11 +10,11 @@
 <body>
 
 <?php
-    include('template/navbar.html');
+    include('template/navbar.php');
 
             if (isset($_SESSION['authError']))    {
                 echo $_SESSION['authError'];
-                //unset($_SESSION['authError']);
+                unset($_SESSION['authError']);
             }
             
             if (!isset($_SESSION['tokens'])) {
