@@ -10,16 +10,8 @@
 <body>
 
 <?php
-    require_once dirname(__DIR__).'/config/connexion.php';
+    include('template/navbar.php');
 
-    $db = connect($config);
-        if ($db == null) {
-            echo '
-                <div class="container mt-3">
-                    Revenez dans quelques instants
-                </div>
-                ';
-        } else {
             if (!isset($_SESSION['tokens'])) {
                 $token = '';
             } else if (isset($_SESSION['authError']))    {
@@ -34,18 +26,17 @@
             }
             echo '
             <div class="container mt-3">
-                <form action="web/userCheck.php" method="post">
+                <form action="index.php?page=connexion" method="post">
                     <h1>Connectez-vous</h1>
                     <input type="hidden" name="token" value="'.$token.'">
                     <input type="hidden" name="sendDate" value="'.$nowDate.'">
                     <label for="inputPseudo" class="sr-only">Pseudo:</label>
                     <input data-span="divPseudo" type="text" id="inputPseudo" name="inputPseudo" class="form-control" placeholder="Pseudo" required autofocus>
-                    <label for="inputEmail" class="sr-only">Email:</label>
-                    <input data-span="divEmail" type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required>
+                    <label for="inputPassword" class="sr-only">Mot de passe:</label>
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Mot de passe" required>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="btRegister">Se connecter</button>
                 </form>
             </div>
         ';
-        }
     include('template/footer.html');
 ?>

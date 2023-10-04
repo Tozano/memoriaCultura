@@ -10,16 +10,10 @@
 <body>
 
 <?php
+    include('template/navbar.php');
+
     require_once dirname(__DIR__).'/config/connexion.php';
 
-    $db = connect($config);
-        if ($db == null) {
-            echo '
-                <div class="container mt-3">
-                    Revenez dans quelques instants
-                </div>
-                ';
-        } else {
             if (!isset($_SESSION['tokens'])) {
                 $token = '';
             } else if (isset($_SESSION['authError']))    {
@@ -35,6 +29,5 @@
             echo '
             Mettre l\'acceuil
         ';
-        }
     include('template/footer.html');
 ?>
