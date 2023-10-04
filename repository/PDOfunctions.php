@@ -27,7 +27,7 @@ require_once dirname(__DIR__).'/config/local.config.php';
             user_role INTEGER NOT NULL DEFAULT 0)");
 
         $pdo->query("CREATE TABLE IF NOT EXISTS CONTENT (
-            content_id INTEGER NOT NULL PRIMARY KEY,
+            content_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
             created_datetime DATETIME NOT NULL,
             title VARCHAR(255) NOT NULL,
             content_desc TEXT NOT NULL,

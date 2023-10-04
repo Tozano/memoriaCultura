@@ -12,12 +12,36 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <?php
+        if (!isset($_SESSION['login'])) {
+      ?>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=connexion">Connexion</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?page=inscription">Inscription</a>
         </li>
+        <?php
+        } else {
+          if ($_SESSION['login'] == 1) {
+            ?>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=deconnexion">Mes trucs culturels</a>
+            </li>
+          <?php
+          }
+          ?>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=profil">Profil</a>
+            </li>
+          <?php
+          ?>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=deconnexion">Déconnexion</a>
+            </li>
+          <?php
+        }
+        ?>
       </ul>
     </div>
   </div>
