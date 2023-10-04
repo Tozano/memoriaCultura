@@ -96,6 +96,7 @@
                                                         $_SESSION['authNotify'] = 'Connexion à '.$pseudo;
                                                         $_SESSION['login'] = $pseudo;
                                                         $_SESSION['role'] = $r['user_role'];
+                                                        header("Location: index.php");
                                                     } else {
                                                         $_SESSION['authError'] = 'Login/mot de passe incorrect';
                                                     }
