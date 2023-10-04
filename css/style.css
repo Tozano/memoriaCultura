@@ -7,4 +7,6 @@
     list-style: none;
 }
 
-/* test */
+.nav-link {
+    font-size: 22px !important ;
+}
