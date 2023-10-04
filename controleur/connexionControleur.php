@@ -12,7 +12,7 @@
                     && isset($_POST['token'])
                     && isset($_POST['sendDate'])
                     && isset($_POST['inputShortDesc'])) {
-                        $post = $_POST['inputPseudo'];
+                        $pseudo = $_POST['inputPseudo'];
                         $email = $_POST['inputEmail'];
                         $password = $_POST['inputPassword'];
                         $passwordConf = $_POST['inputPasswordConf'];
@@ -33,17 +33,17 @@
                                     } else {
                                         if (verifInsertUser($pseudo, $email, $password, $passwordConf, $nom, $prenom, $shortDesc)) {
                                             $password = password_hash($password, PASSWORD_DEFAULT);
-                                            $r = insertUser($db, $email, $password, $nom, $prenom, $shortDesc);
+                                            $user = new User($db);
+                                            
+                                            $r = $user->insertUser($pseudo, $email, $password, $nom, $prenom, $shortDesc);
                                             if ($r) {
                                                 echo 'Vous êtes bien enregistré '.$pseudo;
-                                                $_SESSION['isLogged'] = true;
-                                                $_SESSION['target'] = 'listContent.php';
-                                                unset($_SESSION['backspace']);
+                                                
+                                                $_SESSION['login'] = $pseudo;
+                                                $_SESSION['role'] = 0;
                                                 header("Location: index.php");
                                             } else {
                                                 $_SESSION['authError'] = 'Vous n\'avez pas pu être enregistré';
-                                                $_SESSION['target'] = 'inscription.php';
-                                                header("Location: inscription.php");
                                             }
                                         }
                                     }
@@ -62,7 +62,7 @@
     }
 
     function connexionControleur($db){ 
-            if (isset($_POST['btConnexion'])) {
+            if (isset($_POST['btRegister'])) {
                 if ($db == null) {
                     $_SESSION['authError'] = 'Connexion impossible';
                 } else {
@@ -70,31 +70,37 @@
                         && isset($_POST['inputPassword'])
                         && isset($_POST['token'])
                         && isset($_POST['sendDate'])) {
-                            $post = $_POST['inputPseudo'];
+                            $pseudo = $_POST['inputPseudo'];
                             $password = $_POST['inputPassword'];
                             $token = filter_input(INPUT_POST, 'token', FILTER_SANITIZE_STRING);
                             $senDate =$_POST['sendDate'];
-        
                             if (!$token) {
-                                echo 'Il manque un token';
+                                $_SESSION['authError'] = 'Il manque un token';
                                 exit;
                             } else {
                                 foreach ($_SESSION['tokens'] as $aToken) {
                                     if ($aToken[0] == $senDate) {
                                         if ($token !== $aToken[1]) {
-                                            echo 'Le token n\'est pas le bon :';
+                                            $_SESSION['authError'] = 'Le token n\'est pas le bon :';
                                         } else {
                                             if (verifUserForConnexion($pseudo, $password)) {
-                                                $password = password_hash($password, PASSWORD_DEFAULT);
-                                                $r = selectUserByPseudo($db, $pseudo);
-        
+                                                $user = new User($db);
+
+                                                $r = $user->selectUserByPseudo($pseudo);
+
                                                 if ($aToken[0] >= date("Y-m-d H:i:s")) {
                                                     unset($aToken);
                                                 }
-                                                if ($r) {
-                                                    echo 'Connexion à '.$pseudo;
+                                                if ($r) { 
+                                                    if (password_verify($password, $r['mdp'])) {
+                                                        $_SESSION['authNotify'] = 'Connexion à '.$pseudo;
+                                                        $_SESSION['login'] = $pseudo;
+                                                        $_SESSION['role'] = $r['user_role'];
+                                                    } else {
+                                                        $_SESSION['authError'] = 'Login/mot de passe incorrect';
+                                                    }
                                                 } else {
-                                                    $_SESSION['authError'] = 'Vous n\'avez pas pu être connecté';
+                                                    $_SESSION['authError'] = 'Login/mot de passe incorrect';
                                                 }
                                             }
                                         }

@@ -16,7 +16,7 @@ require_once dirname(__DIR__).'/config/local.config.php';
     function createTables() {
         $pdo = getConnection();
         $pdo->query("CREATE TABLE IF NOT EXISTS USER (
-            user_id INTEGER NOT NULL PRIMARY KEY,
+            user_id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
             pseudo VARCHAR(255) NOT NULL,
             mdp VARCHAR(255) NOT NULL, 
             email VARCHAR(255) NOT NULL,

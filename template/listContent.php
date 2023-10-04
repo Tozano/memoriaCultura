@@ -10,15 +10,15 @@
 <body>
 
 <?php
-    include('template/navbar.php');
+    include('template/navbar.html');
 
-    require_once dirname(__DIR__).'/config/connexion.php';
-
-            if (!isset($_SESSION['tokens'])) {
-                $token = '';
-            } else if (isset($_SESSION['authError']))    {
+            if (isset($_SESSION['authError']))    {
                 echo $_SESSION['authError'];
                 unset($_SESSION['authError']);
+            }
+            
+            if (!isset($_SESSION['tokens'])) {
+                $token = '';
             } else {
                 $nowDate = date("Y-m-d H:i:s");
                 $token = md5(uniqid(mt_rand(), true));
