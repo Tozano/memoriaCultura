@@ -276,8 +276,6 @@
   <?php echo '<img src="'.GET_SOURCES.'img/Capture_decran_2023-10-05_120207.png" class="img-fluid"  alt="...">'?>
 </div>
 
-</body>
-
 <?php
     include('footer.php');
     echo '<script src='.GET_SOURCES.'"js/frisechrono.js"></script>';

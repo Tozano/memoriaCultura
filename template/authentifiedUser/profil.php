@@ -34,7 +34,7 @@
                 if ($userData['long_desc'] != null) {
                     $longDesc = $userData['long_desc'];
                 }
-            echo '
+                echo '
             <div class="container mt-3">
                 <form action="index.php?page=profil" method="post">
                     <h1>Mon profil</h1>
@@ -53,7 +53,48 @@
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="btUserModify">Modifier</button>
                 </form>
             </div>
-        ';
+                ';
+            ?>
+            <div class="main-container-abonnement">
+  <h1 class="title-abonnement">Les abonnements disponible</h1>
+  <div class="sub-container-abonnement">
+    
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+    <?php echo '<img src="'.GET_SOURCES.'img/GodfreyKneller-IsaacNewton-1689.jpg" class="card-img-top" alt="...">'?>
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Abonnement Newton</h5>
+        <p class="card-text">8.99€ / mois</p>
+        <p class="card-text">SANS PUB</p>
+        <p class="card-text">5 conférences</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+    <?php echo '<img src="'.GET_SOURCES.'img/Aristotebuste_epoque_romaine.png" class="card-img-top" alt="...">'?>
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Abonnement Aristote</h5>
+        <p class="card-text">12.99€ / mois</p>
+        <p class="card-text">SANS PUB</p>
+        <p class="card-text">Conférences illimitées sans interaction</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+    <?php echo '<img src="'.GET_SOURCES.'img/Atelier_de_Nicolas_de_Largillière,_portrait_de_Voltaire,_détail_(musée_Carnavalet)_-002.jpg" class="card-img-top" alt="...">'?>
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Abonnement Voltaire</h5>
+        <p class="card-text">19.99€ / mois</p>
+        <p class="card-text">SANS PUB</p>
+        <p class="card-text">Conférences interactives illimitées</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+  </div>
+</div>
+<?php
             }
     include('template/footer.php');
 ?>

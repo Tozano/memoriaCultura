@@ -29,9 +29,7 @@
             if (!isset($contentsData)) {
                 echo 'Un problème est survenu lors du chargement de la page';
             } else {
-                foreach ($contentsData as $content) {
-                    echo $content['title'];
-                }
+                include('template/contentTemplate/contentRows.php');
             }
     include('template/footer.php');
 ?>

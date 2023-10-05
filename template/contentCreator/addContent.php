@@ -39,8 +39,9 @@
                     <label for="inputAddress" class="sr-only">Adresse:</label>
                     <input data-span="divAddress" type="text" id="inputAddress" name="inputAddress" class="form-control" style="margin-bottom: 1rem;" placeholder="Adresse" required>
                     <label for="inputYear" class="sr-only">Année:</label>
-                    <input type="text" id="inputYear" name="inputYear" class="form-control" style="margin-bottom: 1rem;" placeholder="Année" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="btAddContent">S\'inscrire</button>
+                    <input type="text" id="inputYear" name="inputYear" class="form-control" placeholder="Année" required>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="btAddContent">Ajouter</button>
+
                 </form>
             </div>
         ';
