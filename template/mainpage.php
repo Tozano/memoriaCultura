@@ -154,89 +154,17 @@
     </div>
   </section>
 
-  <div class="main-container-cards">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+<div class="main-container">
+  <div class="text-center">
+  <?php echo '<img src="'.GET_SOURCES.'img/ddsdsdsd.png" class="rounded" width="700" height="200">'?>
   </div>
-
-  <div class="main-container-cards">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="main-container-cards">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
+</div>
 
 <div class="main-container-abonnement">
   <h1 class="title-abonnement">Les abonnements disponibles</h1>
   <div class="sub-container-abonnement">
     
-
+  <div data-aos="fade-up"></div>
     <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
     <?php echo '<img src="'.GET_SOURCES.'img/GodfreyKneller-IsaacNewton-1689.jpg" class="card-img-top" style="border-radius: 50%;" alt="...">'?>
       <div class="card-body-abonnement">
@@ -244,9 +172,10 @@
         <p class="card-text">8.99€ / mois</p>
         <p class="card-text">SANS PUB</p>
         <p class="card-text">5 conférences</p>
-        <a href="#" class="btn btn-primary">Je m'abonne</a>
+        <a href="index.php?page=inscription" class="btn btn-primary">Je m'abonne</a>
       </div>
     </div>
+  
 
     <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
     <?php echo '<img src="'.GET_SOURCES.'img/Aristotebuste_epoque_romaine.png" class="card-img-top" style="border-radius: 50%;" alt="...">'?>
@@ -255,7 +184,7 @@
         <p class="card-text">12.99€ / mois</p>
         <p class="card-text">SANS PUB</p>
         <p class="card-text">Conférences illimitées sans interaction</p>
-        <a href="#" class="btn btn-primary">Je m'abonne</a>
+        <a href="index.php?page=inscription" class="btn btn-primary">Je m'abonne</a>
       </div>
     </div>
 
@@ -266,14 +195,16 @@
         <p class="card-text">19.99€ / mois</p>
         <p class="card-text">SANS PUB</p>
         <p class="card-text">Conférences interactives illimitées</p>
-        <a href="#" class="btn btn-primary">Je m'abonne</a>
+        <a href="index.php?page=inscription" class="btn btn-primary">Je m'abonne</a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="img-center">
-  <?php echo '<img src="'.GET_SOURCES.'img/Capture_decran_2023-10-05_120207.png" class="img-fluid"  alt="...">'?>
+<div class="main-container">
+    <div class="text-center">
+    <?php echo '<img src="'.GET_SOURCES.'img/Capture_decran_2023-10-05_120207.png" class="rounded" width="700" height="200">'?>
+    </div>
 </div>
 
 <?php
