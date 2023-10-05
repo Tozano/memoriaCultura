@@ -36,6 +36,8 @@ body{
   padding-top: 3rem;
   padding-bottom: 3rem;
   text-align: center;
+  
+  
 }
 
 .title-abonnement {
@@ -45,10 +47,16 @@ body{
 .sub-container-abonnement {
   display: flex;
   justify-content: space-evenly;
+  
+  
 }
 
 .card-abo {
-  background-color: #f3727c
+  background-color: #f3727c;
+  border: 2px solid;
+  border-color: black;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px gray;
 }
 
 .img-fluid {
@@ -116,13 +124,6 @@ body{
   
   .section h2 {
     font-size: 1.3rem;
-  }
-  
-  /* REGISTER */
-
-  .register-menu {
-    display: flex;
-    margin: auto;
   }
 
 
