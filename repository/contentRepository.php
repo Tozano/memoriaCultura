@@ -7,13 +7,15 @@ class Content {
         $this->db = $db;
     }
 
-    public function insertContent($title, $contentDesc, $userId) {
+    public function insertContent($title, $contentDesc, $contentAddress, $startYear, $userId) {
         $r = true;
         
-            $insert = $this->db->prepare("insert  into  CONTENT(created_datetime, title, content_desc, user_id) values (:createdDatetime, :title, :contentDesc, :userId)");
+            $insert = $this->db->prepare("insert  into  CONTENT(created_datetime, title, content_desc, content_address, start_year, user_id) values (:createdDatetime, :title, :contentDesc, :contentAddress, :startYear, :userId)");
             $insert->bindValue('createdDatetime', new DateTime("now"), PDO::PARAM_STR);
             $insert->bindValue('title', $title, PDO::PARAM_STR);
             $insert->bindValue('contentDesc', $contentDesc, PDO::PARAM_STR);
+            $insert->bindValue('contentAddress', $contentAddress, PDO::PARAM_STR);
+            $insert->bindValue('startYear', $startYear, PDO::PARAM_STR);
             $insert->bindValue('userId', $userId, PDO::PARAM_INT);
             $insert->execute();
 
@@ -25,10 +27,10 @@ class Content {
     }
 
     public function selectAllContent() {
-        $selectByPseudo = $this->db->prepare("select * from CONTENT");
-        $selectByPseudo->execute();
+        $selectAll = $this->db->prepare("select * from CONTENT");
+        $selectAll->execute();
 
-        return $selectByPseudo->fetchAll();
+        return $selectAll->fetchAll();
     }
 
     public function selectContentById($idContent) {
@@ -37,6 +39,14 @@ class Content {
         $selectByPseudo->execute();
 
         return $selectByPseudo->fetch();
+    }
+
+    public function selectAllContentsByYear($startYear) {
+        $selectAllContentsByYear = $this->db->prepare("select * from CONTENT where start_year= :startYear");
+        $selectAllContentsByYear->bindValue('startYear', $startYear, PDO::PARAM_INT);
+        $selectAllContentsByYear->execute();
+
+        return $selectAllContentsByYear->fetchAll();
     }
 
     public function deleteContentById($idContent) {

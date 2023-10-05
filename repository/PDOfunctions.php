@@ -22,7 +22,7 @@ require_once dirname(__DIR__).'/config/local.config.php';
             email VARCHAR(255) NOT NULL,
             nom VARCHAR(255) NOT NULL,
             prenom VARCHAR(255) NOT NULL,
-            short_desc VARCHAR(255) NOT NULL,
+            short_desc VARCHAR(255) NULL,
             long_desc TEXT NULL,
             user_role INTEGER NOT NULL DEFAULT 0)");
 
@@ -32,7 +32,7 @@ require_once dirname(__DIR__).'/config/local.config.php';
             title VARCHAR(255) NOT NULL,
             content_desc TEXT NOT NULL,
             content_address VARCHAR(255) NOT NULL,
-            startYear VARCHAR(4) NOT NULL,
+            start_year VARCHAR(4) NOT NULL,
             user_id INTEGER NOT NULL,
             FOREIGN KEY (`user_id`) REFERENCES `USER` (`user_id`))");
 
