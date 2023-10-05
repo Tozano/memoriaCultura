@@ -25,6 +25,5 @@ function getPage(){
     } 
     $contenu = $lesPages[$page];
     return $contenu;
-
 }
 ?>

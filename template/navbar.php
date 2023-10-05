@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <div class="container">
       <a class="navbar-brand" href="index.php?page=accueil">
-        <img src="img\Curated_online_exhibitons-removebg-icon.png" class="img-memoria" alt="" width="190" height="140">
+      <?php echo '<img src="'.GET_SOURCES.'img/Curated_online_exhibitons-removebg-icon.png" class="img-memoria" alt="" width="190" height="140">'?>
       </a>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

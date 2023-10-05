@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <?php
-    include('template/header.html');
+    include('template/header.php');
 ?>
     <title>Memoria Cultura - Profil</title>
 </head>
@@ -55,5 +55,5 @@
             </div>
         ';
             }
-    include('template/footer.html');
+    include('template/footer.php');
 ?>

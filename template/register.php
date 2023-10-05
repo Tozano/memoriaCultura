@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <?php
-    include('template/header.html');
+    include('template/header.php');
 ?>
     <title>Memoria Cultura - Connexion</title>
 </head>
@@ -40,5 +40,5 @@
                 </form>
             </div>
         ';
-    include('template/footer.html');
+    include('template/footer.php');
 ?>
