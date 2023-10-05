@@ -1,6 +1,7 @@
 <?php
     include('header.php');
-    ?>
+?>
+
     <title>Memoria Cultura - Accueil</title>
 </head>
 
@@ -10,7 +11,7 @@
       echo 'Un problème est survenu lors du chargement de la page';
   } else {
 ?>
-  <div class="main-container" class="main-container">
+  <div class="main-container">
     <div class="select-menu">
         <select class="form-select" aria-label="select-container">
             <option selected>Lieu ?</option>
@@ -171,7 +172,34 @@
     </div>
   </section>
 
+  <div class="main-container-cards">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
 
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
 
 </body>
 
