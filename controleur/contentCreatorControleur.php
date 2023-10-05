@@ -68,11 +68,18 @@
 
     function removeContentControleur($db){
         if ($_SESSION['role'] == 1) {
-        $user = new User($db);
-        $userData = $user->selectUserByPseudo($_SESSION['login']);
-        $content = new Content($db);
-        $contentsData = $content->selectAllContentsByCreator($userData['user_id']);
+            $contentId = $_GET['contentId'];
+            $user = new User($db);
+            $userData = $user->selectUserByPseudo($_SESSION['login']);
+            $content = new Content($db);
+            $contentData = $content->selectContentById($contentId);
+            if ($contentData['user_id'] == $userData['user_id']) {
+                $content->deleteContentById($contentId);
+            } else {
+                $_SESSION['authError'] = 'Vous n\'avez pas les droits';
+            }
         } else {
             $_SESSION['authError'] = 'Vous n\'avez pas les droits';
         }
+        header("Location: index.php?page=mycontent");
     }
