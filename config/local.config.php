@@ -2,7 +2,7 @@
 define('GET_SOURCES', '');
 
 $config['serveur']='localhost';
-$config['login'] = 'root';
-$config['mdp'] ='';
+$config['login'] = 'login4426';
+$config['mdp'] ='gYlSjWLERaYsBrn';
 $config['bd'] = 'dbMemoriaCultura';
 ?>

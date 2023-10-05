@@ -40,7 +40,7 @@
                     <input data-span="divAddress" type="text" id="inputAddress" name="inputAddress" class="form-control" placeholder="Adresse" required>
                     <label for="inputYear" class="sr-only">Année:</label>
                     <input type="text" id="inputYear" name="inputYear" class="form-control" placeholder="Année" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="btAddContent">S\'inscrire</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" name="btAddContent">Ajouter</button>
                 </form>
             </div>
         ';

@@ -26,7 +26,7 @@
           if ($_SESSION['role'] == 1) {
             ?>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=mycontent">Mes trucs culturels</a>
+              <a class="nav-link" href="index.php?page=mycontent">Mon contenu</a>
             </li>
           <?php
           }
