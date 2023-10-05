@@ -23,7 +23,7 @@ function getPage(){
         $page = 'accueil';
     }
 
-    if (!isset($_SESSION['role'])) {
+    if (isset($_SESSION['role'])) {
         if ($_SESSION['role'] != 1 && ($page == 'mycontent' || $page == 'addcontent' || $page == 'removecontent')) {
             $page = 'accueil';
         }
