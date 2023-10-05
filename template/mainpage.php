@@ -1,8 +1,14 @@
 <?php
     include('header.html');
-?>
+    ?>
+    <title>Memoria Cultura - Accueil</title>
+</head>
 
 <body>
+
+<?php
+    include('template/navbar.php');
+?>
     <div class="main-container" class="main-container">
         <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -17,7 +23,11 @@
         </div>
     </div>
 </body>
-
+<?php
+if (!isset($contentsData)) {
+                echo 'Un problème est survenu lors du chargement de la page';
+            } else {
+              ?>
 <div class="select-menu">
     <select class="form-select" aria-label="select-container">
         <option selected>Lieu ?</option>
@@ -105,5 +115,6 @@
 </section>
 
 <?php
+            }
     include('footer.html');
 ?>

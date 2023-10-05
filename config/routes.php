@@ -8,6 +8,7 @@ function getPage(){
     $lesPages['connexion'] = "connexionControleur";
     $lesPages['deconnexion'] = "deconnexionControleur";
     $lesPages['profil'] = "profilControleur";
+    $lesPages['mycontent'] = "showMyContentControleur";
 
     if(isset($_GET['page'])){
         $page = $_GET['page'];

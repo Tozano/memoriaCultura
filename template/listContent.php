@@ -26,8 +26,12 @@
                 array_push($_SESSION['tokens'], $tokenAssoss);
                 $tokens = $_SESSION['tokens'];
             }
+            if (!isset($contentsData)) {
+                echo 'Un problème est survenu lors du chargement de la page';
+            } else {
             echo '
             Mettre l\'acceuil
         ';
+            }
     include('template/footer.html');
 ?>

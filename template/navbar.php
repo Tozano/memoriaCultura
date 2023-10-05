@@ -23,10 +23,10 @@
         </li>
         <?php
         } else {
-          if ($_SESSION['login'] == 1) {
+          if ($_SESSION['role'] == 1) {
             ?>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=deconnexion">Mes trucs culturels</a>
+              <a class="nav-link" href="index.php?page=mycontent">Mes trucs culturels</a>
             </li>
           <?php
           }
