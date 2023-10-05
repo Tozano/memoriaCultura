@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-brown">
   <div class="container-fluid">
     <div class="container">
       <a class="navbar-brand" href="index.php?page=accueil">

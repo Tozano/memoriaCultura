@@ -50,5 +50,14 @@
                 </form>
             </div>
         ';
-    include('template/footer.php');
+?>
+
+<div class="main-container">
+    <div class="text-center">
+    <?php echo '<img src="'.GET_SOURCES.'img/ghp.png" class="rounded" width="700" height="300">'?>
+    </div>
+</div>
+
+<?php
+include('template/footer.php');
 ?>
