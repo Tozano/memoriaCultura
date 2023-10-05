@@ -8,7 +8,7 @@ for ($i=0; $i < $numberOfFullRows; $i++) {
   <div class="main-container-cards">
   <?php
   for ($j=0; $j < 3; $j++) { 
-    include('template/contentTemplate/singleCard.php');
+    include('template/contentTemplate/ownContentCard.php');
     $cardCounter++;
   }
   ?>
@@ -20,7 +20,7 @@ if ($contentsNumber % 3 != 0) {
   <div class="main-container-cards">
   <?php
   for ($j=$cardCounter; $j < $contentsNumber; $j++) { 
-      include('template/contentTemplate/singleCard.php');
+      include('template/contentTemplate/ownContentCard.php');
       $cardCounter++;
   }
   ?>
