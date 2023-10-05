@@ -15,6 +15,10 @@ function getPage(){
         $page = 'accueil';
     }
 
+    if (!isset($_SESSION['login']) && $page == 'profil') {
+        $page = 'accueil';
+    }
+
     if (!isset($lesPages[$page])){
         $page = 'accueil';
     } 
