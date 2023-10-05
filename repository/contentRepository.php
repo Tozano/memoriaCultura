@@ -43,10 +43,18 @@ class Content {
 
     public function selectAllContentsByYear($startYear) {
         $selectAllContentsByYear = $this->db->prepare("select * from CONTENT where start_year= :startYear");
-        $selectAllContentsByYear->bindValue('startYear', $startYear, PDO::PARAM_INT);
+        $selectAllContentsByYear->bindValue('startYear', $startYear, PDO::PARAM_STR);
         $selectAllContentsByYear->execute();
 
         return $selectAllContentsByYear->fetchAll();
+    }
+
+    public function selectAllContentsByCreator($userId) {
+        $selectAllContentsByCreator = $this->db->prepare("select * from CONTENT where user_id= :userId");
+        $selectAllContentsByCreator->bindValue('userId', $userId, PDO::PARAM_INT);
+        $selectAllContentsByCreator->execute();
+
+        return $selectAllContentsByCreator->fetchAll();
     }
 
     public function deleteContentById($idContent) {
