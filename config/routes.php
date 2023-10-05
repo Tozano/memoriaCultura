@@ -3,6 +3,7 @@
 function getPage(){
 
     $lesPages['accueil'] = "accueilControleur";
+    $lesPages['contents'] = "listContentControleur";
     $lesPages['connexion'] = "connexionControleur";
     $lesPages['inscription'] = "inscrireControleur";
     $lesPages['connexion'] = "connexionControleur";
