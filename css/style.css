@@ -21,6 +21,18 @@ body{
     padding-top: 1rem;
 }
 
+.main-container-cards {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.column-cards {
+  display: flex;
+}
+
 .form-select {
     width: 230px;
     height: auto;
