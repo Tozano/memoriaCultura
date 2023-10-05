@@ -33,19 +33,19 @@
                     <input type="hidden" name="token" value="'.$token.'">
                     <input type="hidden" name="sendDate" value="'.$nowDate.'">
                     <label for="inputPseudo" class="sr-only">Pseudo:</label>
-                    <input data-span="divPseudo" type="text" id="inputPseudo" name="inputPseudo" class="form-control" placeholder="Pseudo" required autofocus>
+                    <input data-span="divPseudo" type="text" id="inputPseudo" name="inputPseudo" class="form-control" style="margin-bottom: 1rem;" placeholder="Pseudo" required autofocus>
                     <label for="inputEmail" class="sr-only">Email:</label>
-                    <input data-span="divEmail" type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required>
+                    <input data-span="divEmail" type="email" id="inputEmail" name="inputEmail" class="form-control" style="margin-bottom: 1rem;" placeholder="Email" required>
                     <label for="inputPassword" class="sr-only">Mot de passe:</label>
-                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Mot de passe" required>
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" style="margin-bottom: 1rem;" placeholder="Mot de passe" required>
                     <label for="inputPassword2" class="sr-only">Mot de passe:</label>
-                    <input type="password" id="inputPassword2" name="inputPasswordConf" class="form-control" placeholder="Confirmation mot de passe" required>
+                    <input type="password" id="inputPassword2" name="inputPasswordConf" class="form-control" style="margin-bottom: 1rem;" placeholder="Confirmation mot de passe" required>
                     <label for="inputNom" class="sr-only">Nom:</label>
-                    <input data-span="divNom" type="text" id="inputNom" name="inputNom" class="form-control" placeholder="Nom" required>
+                    <input data-span="divNom" type="text" id="inputNom" name="inputNom" class="form-control" style="margin-bottom: 1rem;" placeholder="Nom" required>
                     <label for="inputPrenom" class="sr-only">Prénom:</label>
-                    <input data-span="divPrenom" type="text" id="inputPrenom" name="inputPrenom" class="form-control" placeholder="Prenom" required>
+                    <input data-span="divPrenom" type="text" id="inputPrenom" name="inputPrenom" class="form-control" style="margin-bottom: 1rem;" placeholder="Prenom" required>
                     <label for="inputShortDesc" class="sr-only">Description courte:</label>
-                    <input type="text" id="inputShortDesc" name="inputShortDesc" class="form-control" placeholder="Description courte" required>
+                    <input type="text" id="inputShortDesc" name="inputShortDesc" class="form-control" style="margin-bottom: 1rem;" placeholder="Description courte" required>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="btInscrire">S\'inscrire</button>
                 </form>
             </div>

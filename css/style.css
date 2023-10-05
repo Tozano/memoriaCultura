@@ -58,6 +58,13 @@ body{
   margin-right: auto;
 }
 
+.card-img-top {
+  width: 250px !important;
+  height: 250px !important;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
 .img-center {
   display: flex;
   justify-content: center;
@@ -111,8 +118,15 @@ body{
     font-size: 1.3rem;
   }
   
-  /* TIMELINE
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /* REGISTER */
+
+  .register-menu {
+    display: flex;
+    margin: auto;
+  }
+
+
+  /* TIMELINE */
   
   .timeline {
     white-space: nowrap;

@@ -33,9 +33,9 @@
                     <input type="hidden" name="token" value="'.$token.'">
                     <input type="hidden" name="sendDate" value="'.$nowDate.'">
                     <label for="inputPseudo" class="sr-only">Pseudo:</label>
-                    <input data-span="divPseudo" type="text" id="inputPseudo" name="inputPseudo" class="form-control" placeholder="Pseudo" required autofocus>
-                    <label for="inputPassword" class="sr-only">Mot de passe:</label>
-                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Mot de passe" required>
+                    <input data-span="divPseudo" type="text" id="inputPseudo" name="inputPseudo" class="form-control" style="margin-bottom: 1rem;" placeholder="Pseudo" required autofocus>
+                    <label for="inputPassword" class="sr-only ">Mot de passe:</label>
+                    <input type="password" id="inputPassword" name="inputPassword" class="form-control" style="margin-bottom: 1rem;" placeholder="Mot de passe" required>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="btRegister">Se connecter</button>
                 </form>
             </div>
