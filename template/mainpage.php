@@ -25,7 +25,7 @@
         </select>
     </div>
       <div class="text-center">
-      <?php echo '<img src="'.GET_SOURCES.'img/Capture d\'écran 2023-10-04 112429.png" class="rounded" width="700" height="200">'?>
+      <?php echo '<img src="'.GET_SOURCES.'img/histoire-publicité-montreal-winter-sport-1-1024x608.jpg" class="rounded" width="700" height="200">'?>
       </div>
   </div>
 
@@ -63,7 +63,7 @@
       </li>
       <li>
         <div>
-          <time>1337-1453</time> Guerre de Cent Ans
+          <time>1337</time> Guerre de Cent Ans
         </div>
       </li>
       <li>
@@ -123,7 +123,7 @@
       </li>
       <li>
         <div>
-          <time>1914-1918</time> Première Guerre mondiale
+          <time>1914</time> Première Guerre mondiale
         </div>
       </li>
       <li>
@@ -171,7 +171,6 @@
 
   <div class="main-container-cards">
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -180,7 +179,6 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -189,7 +187,6 @@
     </div>
 
     <div class="card" style="width: 18rem;">
-      <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -197,6 +194,106 @@
       </div>
     </div>
   </div>
+
+  <div class="main-container-cards">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-container-cards">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+<div class="main-container-abonnement">
+  <h1 class="title-abonnement">Les abonnements disponible</h1>
+  <div class="sub-container-abonnement">
+    
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php echo '<img src="'.GET_SOURCES.'img/desktop-wallpaper-books-history-books.jpg" class="img-fluid" alt="...">'?>
 
 </body>
 

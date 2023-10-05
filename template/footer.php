@@ -1,3 +1,13 @@
+    <div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQ et support</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Déclarations de confidentialité</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Espace Pro</a></li>
+        </ul>
+    </footer>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-
