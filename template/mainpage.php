@@ -7,9 +7,6 @@
 
 <?php
     include('navbar.php');
-    if (!isset($contentsData)) {
-      echo 'Un problème est survenu lors du chargement de la page';
-  } else {
 ?>
   <div class="main-container">
     <div class="select-menu">
@@ -204,7 +201,6 @@
 </body>
 
 <?php
-            }
     include('footer.php');
     echo '<script src='.GET_SOURCES.'"js/frisechrono.js"></script>';
 ?>

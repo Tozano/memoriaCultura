@@ -29,9 +29,9 @@
             if (!isset($contentsData)) {
                 echo 'Un problème est survenu lors du chargement de la page';
             } else {
-            echo '
-            Mettre l\'acceuil
-        ';
+                foreach ($contentsData as $content) {
+                    echo $content['title'];
+                }
             }
     include('template/footer.php');
 ?>
