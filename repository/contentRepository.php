@@ -10,8 +10,7 @@ class Content {
     public function insertContent($title, $contentDesc, $contentAddress, $startYear, $userId) {
         $r = true;
         
-            $insert = $this->db->prepare("insert  into  CONTENT(created_datetime, title, content_desc, content_address, start_year, user_id) values (:createdDatetime, :title, :contentDesc, :contentAddress, :startYear, :userId)");
-            $insert->bindValue('createdDatetime', new DateTime("now"), PDO::PARAM_STR);
+            $insert = $this->db->prepare("insert  into  CONTENT(created_datetime, title, content_desc, content_address, start_year, user_id) values (NOW(), :title, :contentDesc, :contentAddress, :startYear, :userId)");
             $insert->bindValue('title', $title, PDO::PARAM_STR);
             $insert->bindValue('contentDesc', $contentDesc, PDO::PARAM_STR);
             $insert->bindValue('contentAddress', $contentAddress, PDO::PARAM_STR);
