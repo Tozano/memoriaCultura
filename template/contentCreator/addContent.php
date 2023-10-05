@@ -33,13 +33,13 @@
                     <input type="hidden" name="token" value="'.$token.'">
                     <input type="hidden" name="sendDate" value="'.$nowDate.'">
                     <label for="inputTitle" class="sr-only">Titre:</label>
-                    <input data-span="divTitle" type="text" id="inputTitle" name="inputTitle" class="form-control" placeholder="Titre" required autofocus>
+                    <input data-span="divTitle" type="text" id="inputTitle" name="inputTitle" class="form-control" style="margin-bottom: 1rem;" placeholder="Titre" required autofocus>
                     <label for="inputDesc" class="sr-only">Description:</label>
-                    <input data-span="divDesc" type="text" id="inputDesc" name="inputDesc" class="form-control" placeholder="Description" required>
+                    <input data-span="divDesc" type="text" id="inputDesc" name="inputDesc" class="form-control" style="margin-bottom: 1rem;" placeholder="Description" required>
                     <label for="inputAddress" class="sr-only">Adresse:</label>
-                    <input data-span="divAddress" type="text" id="inputAddress" name="inputAddress" class="form-control" placeholder="Adresse" required>
+                    <input data-span="divAddress" type="text" id="inputAddress" name="inputAddress" class="form-control" style="margin-bottom: 1rem;" placeholder="Adresse" required>
                     <label for="inputYear" class="sr-only">Année:</label>
-                    <input type="text" id="inputYear" name="inputYear" class="form-control" placeholder="Année" required>
+                    <input type="text" id="inputYear" name="inputYear" class="form-control" style="margin-bottom: 1rem;" placeholder="Année" required>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="btAddContent">S\'inscrire</button>
                 </form>
             </div>

@@ -41,15 +41,15 @@
                     <input type="hidden" name="token" value="'.$token.'">
                     <input type="hidden" name="sendDate" value="'.$nowDate.'">
                     <label for="inputEmail" class="sr-only">Email:</label>
-                    <input data-span="divEmail" type="email" id="inputEmail" name="inputEmail" class="form-control" value="'.$userData['email'].'" required>
+                    <input data-span="divEmail" type="email" id="inputEmail" name="inputEmail" class="form-control" style="margin-bottom: 1rem;" value="'.$userData['email'].'" required>
                     <label for="inputNom" class="sr-only">Nom:</label>
-                    <input data-span="divNom" type="text" id="inputNom" name="inputNom" class="form-control" value="'.$userData['nom'].'" required>
+                    <input data-span="divNom" type="text" id="inputNom" name="inputNom" class="form-control" style="margin-bottom: 1rem;" value="'.$userData['nom'].'" required>
                     <label for="inputPrenom" class="sr-only">Prénom:</label>
-                    <input data-span="divPrenom" type="text" id="inputPrenom" name="inputPrenom" class="form-control" value="'.$userData['prenom'].'" required>
+                    <input data-span="divPrenom" type="text" id="inputPrenom" name="inputPrenom" class="form-control" style="margin-bottom: 1rem;" value="'.$userData['prenom'].'" required>
                     <label for="inputShortDesc" class="sr-only">Description courte:</label>
-                    <input type="text" id="inputShortDesc" name="inputShortDesc" class="form-control" value="'.$userData['short_desc'].'" required>
+                    <input type="text" id="inputShortDesc" name="inputShortDesc" class="form-control" style="margin-bottom: 1rem;" value="'.$userData['short_desc'].'" required>
                     <label for="inputShortDesc" class="sr-only">Description:</label>
-                    <input type="text" id="inputLongDesc" name="inputLongDesc" class="form-control" value="'.$longDesc.'" required>
+                    <input type="text" id="inputLongDesc" name="inputLongDesc" class="form-control" style="margin-bottom: 1rem;" value="'.$longDesc.'" required>
                     <button class="btn btn-lg btn-primary btn-block" type="submit" name="btUserModify">Modifier</button>
                 </form>
             </div>
