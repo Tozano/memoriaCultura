@@ -25,7 +25,7 @@
         </select>
     </div>
       <div class="text-center">
-      <?php echo '<img src="'.GET_SOURCES.'img/histoire-publicité-montreal-winter-sport-1-1024x608.jpg" class="rounded" width="700" height="200">'?>
+      <?php echo '<img src="'.GET_SOURCES.'img/ddsds.png" class="rounded" width="700" height="200">'?>
       </div>
   </div>
 
