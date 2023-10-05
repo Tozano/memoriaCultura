@@ -28,7 +28,7 @@ body{
 
 .select-menu {
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     display: flex;
     object-position: center;
     flex-direction: row;
@@ -69,7 +69,7 @@ body{
   .timeline ol {
     font-size: 0;
     width: 100vw;
-    padding: 250px 0;
+    padding: 200px 0;
     transition: all 1s;
   }
   
