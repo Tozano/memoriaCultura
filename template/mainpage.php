@@ -9,21 +9,6 @@
     include('navbar.php');
 ?>
   <div class="main-container">
-    <div class="select-menu">
-        <select class="form-select" aria-label="select-container">
-            <option selected>Lieu ?</option>
-            <option value="1">Lens</option>
-            <option value="2">Lille</option>
-            <option value="3">Arras</option>
-        </select>
-
-        <select class="form-select" aria-label="select-container">
-            <option selected>Quand ?</option>
-            <option value="1">1940</option>
-            <option value="2">1960</option>
-            <option value="3">2000</option>
-        </select>
-    </div>
       <div class="text-center">
       <?php echo '<img src="'.GET_SOURCES.'img/ddsds.png" class="rounded" width="700" height="200">'?>
       </div>
@@ -247,8 +232,48 @@
     </div>
   </div>
 
+<div class="main-container-abonnement">
+  <h1 class="title-abonnement">Les abonnements disponibles</h1>
+  <div class="sub-container-abonnement">
+    
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+    <?php echo '<img src="'.GET_SOURCES.'img/GodfreyKneller-IsaacNewton-1689.jpg" class="card-img-top" style="border-radius: 50%;" alt="...">'?>
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Abonnement Newton</h5>
+        <p class="card-text">8.99€ / mois</p>
+        <p class="card-text">SANS PUB</p>
+        <p class="card-text">5 conférences</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+    <?php echo '<img src="'.GET_SOURCES.'img/Aristotebuste_epoque_romaine.png" class="card-img-top" style="border-radius: 50%;" alt="...">'?>
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Abonnement Aristote</h5>
+        <p class="card-text">12.99€ / mois</p>
+        <p class="card-text">SANS PUB</p>
+        <p class="card-text">Conférences illimitées sans interaction</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+
+    <div class="card-abo" style="width: 25rem; height: 40rem; padding: 2rem;">
+    <?php echo '<img src="'.GET_SOURCES.'img/Atelier_de_Nicolas_de_Largillière,_portrait_de_Voltaire,_détail_(musée_Carnavalet)_-002.jpg" class="card-img-top" style="border-radius: 50%;" alt="...">'?>
+      <div class="card-body-abonnement">
+        <h5 class="card-title">Abonnement Voltaire</h5>
+        <p class="card-text">19.99€ / mois</p>
+        <p class="card-text">SANS PUB</p>
+        <p class="card-text">Conférences interactives illimitées</p>
+        <a href="#" class="btn btn-primary">Je m'abonne</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="img-center">
-  <?php echo '<img src="'.GET_SOURCES.'img/Capture_decran_2023-10-05_120207.png" class="img-fluid" alt="...">'?>
+  <?php echo '<img src="'.GET_SOURCES.'img/Capture_decran_2023-10-05_120207.png" class="img-fluid"  alt="...">'?>
 </div>
 
 <?php
