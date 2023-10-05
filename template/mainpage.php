@@ -33,127 +33,127 @@
     <ol>
       <li>
         <div>
-          <time>52 av. J.-C</time> Bataille de Gergovie
+        <a href="index.php?page=contents&year=52"><time>52 av. J.-C</time></a> Bataille de Gergovie
         </div>
       </li>
       <li>
         <div>
-          <time>476</time> Chute de l'Empire romain d'Occident
+          <a href="index.php?page=contents&year=476"><time >476</time></a> Chute de l'Empire romain d'Occident
         </div>
       </li>
       <li>
         <div>
-          <time>496</time> Conversion de Clovis au christianisme
+        <a href="index.php?page=contents&year=496"><time>496</time></a> Conversion de Clovis au christianisme
         </div>
       </li>
       <li>
         <div>
-          <time>732</time> Bataille de Poitiers (ou Tours)
+        <a href="index.php?page=contents&year=732"><time>732</time></a> Bataille de Poitiers (ou Tours)
         </div>
       </li>
       <li>
         <div>
-          <time>843</time> Traité de Verdun
+        <a href="index.php?page=contents&year=843"><time>843</time></a> Traité de Verdun
         </div>
       </li>
       <li>
         <div>
-          <time>1066</time> Guillaume le Conquérant envahit l'Angleterre
+        <a href="index.php?page=contents&year=1066"><time>1066</time></a> Guillaume le Conquérant envahit l'Angleterre
         </div>
       </li>
       <li>
         <div>
-          <time>1337</time> Guerre de Cent Ans
+        <a href="index.php?page=contents&year=1337"><time>1337</time></a> Guerre de Cent Ans
         </div>
       </li>
       <li>
         <div>
-          <time>1429</time> Jeanne d'Arc mène les troupes françaises à la victoire à Orléans
+        <a href="index.php?page=contents&year=1429"><time>1429</time></a> Jeanne d'Arc mène les troupes françaises à la victoire à Orléans
         </div>
       </li>
       <li>
         <div>
-          <time>1515</time> François Ier devient roi de France
+        <a href="index.php?page=contents&year=1515"><time>1515</time></a> François Ier devient roi de France
         </div>
       </li>
       <li>
         <div>
-          <time>1789</time> Prise de la Bastille, début de la Révolution française
+        <a href="index.php?page=contents&year=1789"><time>1789</time></a> Prise de la Bastille, début de la Révolution française
         </div>
       </li>
       <li>
         <div>
-          <time>1792</time> Proclamation de la République
+        <a href="index.php?page=contents&year=1792"><time>1792</time></a> Proclamation de la République
         </div>
       </li>
       <li>
         <div>
-          <time>1804</time> Napoléon devient empereur
+        <a href="index.php?page=contents&year=1804"><time>1804</time></a> Napoléon devient empereur
         </div>
       </li>
       <li>
         <div>
-          <time>1815</time> Défaite de Napoléon à Waterloo
+        <a href="index.php?page=contents&year=1815"><time>1815</time></a> Défaite de Napoléon à Waterloo
         </div>
       </li>
       <li>
         <div>
-          <time>1830</time> Révolution de Juillet, début de la monarchie de Juillet
+        <a href="index.php?page=contents&year=1830"><time>1830</time></a> Révolution de Juillet, début de la monarchie de Juillet
         </div>
       </li>
       <li>
         <div>
-          <time>1848</time> Révolution de février, proclamation de la Deuxième République
+        <a href="index.php?page=contents&year=1848"><time>1848</time></a> Révolution de février, proclamation de la Deuxième République
         </div>
       </li>
       <li>
         <div>
-          <time>1852</time> Napoléon III devient empereur
+        <a href="index.php?page=contents&year=1852"><time>1852</time></a> Napoléon III devient empereur
         </div>
       </li>
       <li>
         <div>
-          <time>1870</time> Défaite française lors de la guerre franco-prussienne
+        <a href="index.php?page=contents&year=1870"><time>1870</time></a> Défaite française lors de la guerre franco-prussienne
         </div>
       </li>
       <li>
         <div>
-          <time>1889</time> Exposition universelle à Paris, Tour Eiffel inaugurée
+        <a href="index.php?page=contents&year=1889"><time>1889</time></a> Exposition universelle à Paris, Tour Eiffel inaugurée
         </div>
       </li>
       <li>
         <div>
-          <time>1914</time> Première Guerre mondiale
+        <a href="index.php?page=contents&year=1914"><time>1914</time></a> Première Guerre mondiale
         </div>
       </li>
       <li>
         <div>
-          <time>1940</time> Occupation allemande de la France pendant la Seconde Guerre mondiale
+        <a href="index.php?page=contents&year=1940"><time>1940</time></a> Occupation allemande de la France pendant la Seconde Guerre mondiale
         </div>
       </li>
       <li>
         <div>
-          <time>1944</time> Libération de la France
+        <a href="index.php?page=contents&year=1944"><time>1944</time></a> Libération de la France
         </div>
       </li>
       <li>
         <div>
-          <time>1957</time> Signature du traité de Rome, début de la CEE
+        <a href="index.php?page=contents&year=1957"><time>1957</time></a> Signature du traité de Rome, début de la CEE
         </div>
       </li>
       <li>
         <div>
-          <time>1968</time> Les événements de Mai 1968
+        <a href="index.php?page=contents&year=1968"><time>1968</time></a> Les événements de Mai 1968
         </div>
       </li>
       <li>
         <div>
-          <time>1989</time> Célébration du bicentenaire de la Révolution française
+        <a href="index.php?page=contents&year=1989"><time>1989</time></a> Célébration du bicentenaire de la Révolution française
         </div>
       </li>
       <li>
         <div>
-          <time>2002</time> Passage à l'euro
+        <a href="index.php?page=contents&year=2002"><time>2002</time></a> Passage à l'euro
         </div>
       </li>
       <li></li>
@@ -293,7 +293,9 @@
   </div>
 </div>
 
-<?php echo '<img src="'.GET_SOURCES.'img/desktop-wallpaper-books-history-books.jpg" class="img-fluid" alt="...">'?>
+<div class="img-center">
+  <?php echo '<img src="'.GET_SOURCES.'img/Capture_decran_2023-10-05_120207.png" class="img-fluid" alt="...">'?>
+</div>
 
 </body>
 
